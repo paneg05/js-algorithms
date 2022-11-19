@@ -18,4 +18,14 @@ const quickSort = (arr)=>{
 
 
 
+let arr =[]
+let x= 500000
+for(let i=0;i<=x;i++){
+    arr.push(Math.floor((Math.random()*100)))
+}
 
+let antes = Date.now()
+let arrOrdenado=quickSort(arr)
+let duracao= Date.now()-antes
+
+console.log(duracao)
